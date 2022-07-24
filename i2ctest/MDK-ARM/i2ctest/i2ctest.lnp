@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"i2ctest\startup_stm32f303xe.o"
+"i2ctest\main.o"
+"i2ctest\stm32f3xx_it.o"
+"i2ctest\stm32f3xx_hal_msp.o"
+"i2ctest\stm32f3xx_hal_i2c.o"
+"i2ctest\stm32f3xx_hal_i2c_ex.o"
+"i2ctest\stm32f3xx_hal_tim.o"
+"i2ctest\stm32f3xx_hal_tim_ex.o"
+"i2ctest\stm32f3xx_hal.o"
+"i2ctest\stm32f3xx_hal_rcc.o"
+"i2ctest\stm32f3xx_hal_rcc_ex.o"
+"i2ctest\stm32f3xx_hal_gpio.o"
+"i2ctest\stm32f3xx_hal_dma.o"
+"i2ctest\stm32f3xx_hal_cortex.o"
+"i2ctest\stm32f3xx_hal_pwr.o"
+"i2ctest\stm32f3xx_hal_pwr_ex.o"
+"i2ctest\stm32f3xx_hal_flash.o"
+"i2ctest\stm32f3xx_hal_flash_ex.o"
+"i2ctest\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "i2ctest\i2ctest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "i2ctest.map" -o i2ctest\i2ctest.axf

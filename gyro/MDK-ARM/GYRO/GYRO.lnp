@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"gyro\startup_stm32f303xe.o"
+"gyro\main.o"
+"gyro\stm32f3xx_it.o"
+"gyro\stm32f3xx_hal_msp.o"
+"gyro\stm32f3xx_hal_i2c.o"
+"gyro\stm32f3xx_hal_i2c_ex.o"
+"gyro\stm32f3xx_hal_tim.o"
+"gyro\stm32f3xx_hal_tim_ex.o"
+"gyro\stm32f3xx_hal.o"
+"gyro\stm32f3xx_hal_rcc.o"
+"gyro\stm32f3xx_hal_rcc_ex.o"
+"gyro\stm32f3xx_hal_gpio.o"
+"gyro\stm32f3xx_hal_dma.o"
+"gyro\stm32f3xx_hal_cortex.o"
+"gyro\stm32f3xx_hal_pwr.o"
+"gyro\stm32f3xx_hal_pwr_ex.o"
+"gyro\stm32f3xx_hal_flash.o"
+"gyro\stm32f3xx_hal_flash_ex.o"
+"gyro\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "GYRO\GYRO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GYRO.map" -o GYRO\GYRO.axf

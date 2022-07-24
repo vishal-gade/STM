@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"practical_i2c\startup_stm32l476xx.o"
+"practical_i2c\main.o"
+"practical_i2c\stm32l4xx_it.o"
+"practical_i2c\stm32l4xx_hal_msp.o"
+"practical_i2c\stm32l4xx_hal_i2c.o"
+"practical_i2c\stm32l4xx_hal_i2c_ex.o"
+"practical_i2c\stm32l4xx_hal_tim.o"
+"practical_i2c\stm32l4xx_hal_tim_ex.o"
+"practical_i2c\stm32l4xx_hal.o"
+"practical_i2c\stm32l4xx_hal_rcc.o"
+"practical_i2c\stm32l4xx_hal_rcc_ex.o"
+"practical_i2c\stm32l4xx_hal_flash.o"
+"practical_i2c\stm32l4xx_hal_flash_ex.o"
+"practical_i2c\stm32l4xx_hal_flash_ramfunc.o"
+"practical_i2c\stm32l4xx_hal_gpio.o"
+"practical_i2c\stm32l4xx_hal_dma.o"
+"practical_i2c\stm32l4xx_hal_dma_ex.o"
+"practical_i2c\stm32l4xx_hal_pwr.o"
+"practical_i2c\stm32l4xx_hal_pwr_ex.o"
+"practical_i2c\stm32l4xx_hal_cortex.o"
+"practical_i2c\system_stm32l4xx.o"
+--library_type=microlib --strict --scatter "Practical_I2C\Practical_I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Practical_I2C.map" -o Practical_I2C\Practical_I2C.axf

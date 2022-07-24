@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"exp-6b\startup_stm32f303xe.o"
+"exp-6b\main.o"
+"exp-6b\stm32f3xx_it.o"
+"exp-6b\stm32f3xx_hal_msp.o"
+"exp-6b\stm32f3xx_hal_tim.o"
+"exp-6b\stm32f3xx_hal_tim_ex.o"
+"exp-6b\stm32f3xx_hal_uart.o"
+"exp-6b\stm32f3xx_hal_uart_ex.o"
+"exp-6b\stm32f3xx_hal.o"
+"exp-6b\stm32f3xx_hal_rcc.o"
+"exp-6b\stm32f3xx_hal_rcc_ex.o"
+"exp-6b\stm32f3xx_hal_gpio.o"
+"exp-6b\stm32f3xx_hal_dma.o"
+"exp-6b\stm32f3xx_hal_cortex.o"
+"exp-6b\stm32f3xx_hal_pwr.o"
+"exp-6b\stm32f3xx_hal_pwr_ex.o"
+"exp-6b\stm32f3xx_hal_flash.o"
+"exp-6b\stm32f3xx_hal_flash_ex.o"
+"exp-6b\stm32f3xx_hal_i2c.o"
+"exp-6b\stm32f3xx_hal_i2c_ex.o"
+"exp-6b\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "exp-6b\exp-6b.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "exp-6b.map" -o exp-6b\exp-6b.axf
